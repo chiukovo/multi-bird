@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="css/reset.css" rel="stylesheet" />
     <script src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="js/phaser.min.js"></script>
     <title>multi bird online game</title>
@@ -11,4 +12,10 @@
 </body>
 <script src="js/game.js" type="text/javascript"></script>
 <script src="js/client.js" type="text/javascript"></script>
+<script>
+    /* set w h */
+    var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO, 'game');
+    game.state.add('birdGame', birdGame);
+    game.state.start('birdGame');
+</script>
 </html>
