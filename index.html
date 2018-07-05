@@ -14,7 +14,7 @@
 <script src="js/client.js" type="text/javascript"></script>
 <script>
     /* set w h */
-    var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO, 'game');
+    var game = new Phaser.Game(768, 896, Phaser.AUTO, 'game');
     game.state.add('birdGame', birdGame);
     game.state.start('birdGame');
 </script>
